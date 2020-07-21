@@ -7486,6 +7486,7 @@
       <memberOf key="att.common"/>
       <memberOf key="att.facsimile"/>
       <memberOf key="att.metadataPointing"/>
+      <memberOf key="att.notationType"/>
       <memberOf key="att.pointing"/>
       <memberOf key="att.section.anl"/>
       <memberOf key="att.section.ges"/>
