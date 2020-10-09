@@ -1001,9 +1001,20 @@
       </attDef>
       <attDef ident="sign.num" usage="opt">
         <desc>The numerator in the mensuration sign/time signature of mensural notation.</desc>
-        <datatype>
-          <rng:data type="positiveInteger"/>
+        <datatype maxOccurs="unbounded">
+          <rng:ref name="data.URI"/>
         </datatype>
+        <constraintSpec ident="check_sign_num" scheme="isoschematron">
+          <constraint>
+            <sch:rule context="@sign.num">
+              <sch:assert role="warning" test="not(normalize-space(.) eq '')">@sign.num attribute
+                should have content.</sch:assert>
+              <sch:assert role="warning"
+                test="every $i in tokenize(., '\s+') satisfies number(substring($i,1))=substring($i,1)">Each
+                value in @sign.num should correspond to an integer value.</sch:assert>
+            </sch:rule>
+          </constraint>
+        </constraintSpec>
       </attDef>
       <attDef ident="sign.numbase" usage="opt">
         <desc>The denominator in the mensuration sign/time signature of mensural notation.</desc>
