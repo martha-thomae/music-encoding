@@ -999,6 +999,18 @@
           <rng:ref name="data.MENSURATIONSIGN"/>
         </datatype>
       </attDef>
+      <attDef ident="sign.num" usage="opt">
+        <desc>The numerator in the mensuration sign/time signature of mensural notation.</desc>
+        <datatype>
+          <rng:data type="positiveInteger"/>
+        </datatype>
+      </attDef>
+      <attDef ident="sign.numbase" usage="opt">
+        <desc>The denominator in the mensuration sign/time signature of mensural notation.</desc>
+        <datatype>
+          <rng:data type="positiveInteger"/>
+        </datatype>
+      </attDef>
     </attList>
   </classSpec>
   <classSpec ident="att.mensural.vis" module="MEI.visual" type="atts">
@@ -1045,6 +1057,18 @@
         <desc>The base symbol in the mensuration sign/time signature of mensural notation.</desc>
         <datatype>
           <rng:ref name="data.MENSURATIONSIGN"/>
+        </datatype>
+      </attDef>
+      <attDef ident="mensur.sign.num" usage="opt">
+        <desc>The numerator in the mensuration sign/time signature of mensural notation.</desc>
+        <datatype>
+          <rng:data type="positiveInteger"/>
+        </datatype>
+      </attDef>
+      <attDef ident="mensur.sign.numbase" usage="opt">
+        <desc>The denominator in the mensuration sign/time signature of mensural notation.</desc>
+        <datatype>
+          <rng:data type="positiveInteger"/>
         </datatype>
       </attDef>
       <attDef ident="mensur.size" usage="opt">
