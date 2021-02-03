@@ -3748,6 +3748,14 @@
         <datatype>
           <rng:data type="NMTOKEN"/>
         </datatype>
+        <valList type="semi">
+          <valItem ident="Ars_antiqua">
+            <desc>Ars antiqua notation style.</desc>
+          </valItem>
+          <valItem ident="Ars_nova">
+            <desc>Ars nova notation style.</desc>
+          </valItem>
+        </valList>
         <constraintSpec ident="When_notationsubtype" scheme="isoschematron">
           <constraint>
             <sch:rule context="mei:*[@notationsubtype]">
