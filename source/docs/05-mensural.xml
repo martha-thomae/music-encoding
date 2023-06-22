@@ -421,16 +421,67 @@
                   The actual effect of these dots (<hi rend="italic">augmenting</hi> a note and making it perfect, or dividing a sequence of notes in different groupings by <hi rend="italic">imperfecting</hi> some notes or <hi rend="italic">altering</hi> others) is encoded with the <att>dur.quality</att> attribute of the correspoding <gi scheme="MEI">note</gi> elements. Examples of the use of dots of division and augmentation can be found in the <ptr target="#mensuralRules"/> section.
                </div>
                <div xml:id="accidentals" type="div3">
-                 <head>Accidentals</head>
-                 <p>[explain that accidentals are usually encoded as independent elements and that accid.ges can be used within notes]</p>
+                  <head>Accidentals</head>
+                  <p>Accidentals are usually encoded as independent elements by using the <gi scheme="MEI">accid</gi> element with an <att>accid</att> attribute to define the type of written accidental (with <att>accid=f</att> and <att>accid=s</att> to define a flat and a sharp, respectively):</p>
+                  <p>
+                     <specList>
+                        <specDesc key="accid"/>
+                     </specList>
+                     <specList>
+                        <specDesc key="att.accid.log" atts="accid"/>
+                     </specList>
+                  </p>
+                  <p>Encoding accidentals as elements allows for providing more information than the type of the written accidental. For example, one can encode the function of the accidental (editorial or cautionary) using <att>func</att> or refer to its zone in the page using <att>facs</att>.</p>
+                  <p>
+                     <specList>
+                        <specDesc key="att.accid.log" atts="func"/>
+                        <specDesc key="att.facsimile" atts="facs"/>
+                     </specList>
+                  </p>
+                  <p>One interesting use of the <gi scheme="MEI">accid</gi> element is when the performed accidental is different from the written one. An example of this is shown below.</p>
+                  <p>
+                     <specList>
+                        <specDesc key="att.accidental.ges" atts="accid.ges"/>
+                     </specList>
+                  </p>
+                  <!-- TO DO: INSERT ENCODED EXAMPLE WITH RENDERING, INCLUDE BOTH THE NOTE AND ITS ACCID AS CHILD IN THE SHOWN ENCODING, WHILE THE KEY SIGNATURE IS ONLY SHOWN IN THE RENDERING BUT NOT THE CODE -->
+                  <p>In this example, the sharp is meant to cancel the flat in the key signature and, therefore, it should be performed as a natural. That is why the written accidental is encoded as a sharp (<att>accid=s</att>) and the gestural/performed accidental is given by the <att>accid.ges=n</att> representing a natural.</p>
+                  <p>The <att>accid.ges</att> can be used in the <gi scheme="MEI">note</gi> element itself, which is especially useful when encoding a note with an "implicit" accidental (i.e., a note that is affected by the accidentals of the key signature).</p>
+                  <!-- TO DO: INCLUDE ANOTHER EXAMPLE WITH IMPLIED ACCIDENTALS (ENCODING AND RENDITION) -->
                </div>
                <div xml:id="coloration" type="div3">
-                 <head>Coloration</head>
-                 <p>[explain where/how coloration can be encoded]</p>
+                  <head>Coloration</head>
+                  <p>A note and rest can be colored by using the attribute <att>colored = true</att>:</p>
+                  <p>
+                     <specList>
+                        <specDesc key="att.coloration" atts="colored"/>
+                     </specList>
+                  </p>
+                  <p>The actual color of the note can be specified with the <att>color</att>. For example <att>color = blue</att> could be used in a <gi scheme="MEI">note</gi> element to indicate that the note is drawn in blue ink (like in English notation).</p>
+                  <p>
+                     <specList>
+                        <specDesc key="att.color" atts="color"/>
+                     </specList>
+                  </p>
+                  <p>However, the effect of the coloration in the note's or rest's duration has to be encoded with the attribute <att>dur.quality</att> or the pair of attributes <att>num</att> and <att>numbase</att> within the corresponding <gi scheme="MEI">note</gi> or <gi scheme="MEI">rest</gi> element.</p>
+                  <!-- INCLUDE EXAMPLE OF COLORATION JUST WITH COLORED AND DUR.QUALITY (code and rendering) -->
                </div>
                <div xml:id="custos" type="div3">
-                 <head>Custos</head>
-                 <p>[explain that there is a custos element available]</p>
+                  <head>Custos</head>
+                  <p>Custos are encoded in MEI using the following element and attributes:</p>
+                  <p>
+                     <specList>
+                        <specDesc key="custos"/>
+                     </specList>
+                  </p>
+                  <p>
+                     <specList>
+                        <specDesc key="att.pitch" atts="pname"/>
+                        <specDesc key="att.octave" atts="oct"/>
+                        <specDesc key="att.staffLoc" atts="loc"/>
+                     </specList>
+                  </p>
+                  <!-- INCLUDE EXAMPLE OF CODE AND RENDERING -->             
                </div>
             </div>
          </div>
