@@ -422,7 +422,7 @@
                </div>
                <div xml:id="accidentals" type="div3">
                   <head>Accidentals</head>
-                  <p>Accidentals are usually encoded as independent elements by using the <gi scheme="MEI">accid</gi> element with an <att>accid</att> attribute to define the type of written accidental (with <att>accid=f</att> and <att>accid=s</att> to define a flat and a sharp, respectively):</p>
+                  <p>Accidentals are usually encoded as independent elements by using the <gi scheme="MEI">accid</gi> element with an <att>accid</att> attribute to define the type of written accidental (with <att>accid = f</att> and <att>accid = s</att> to define a flat and a sharp, respectively):</p>
                   <p>
                      <specList>
                         <specDesc key="accid"/>
@@ -445,7 +445,7 @@
                      </specList>
                   </p>
                   <!-- TO DO: INSERT ENCODED EXAMPLE WITH RENDERING, INCLUDE BOTH THE NOTE AND ITS ACCID AS CHILD IN THE SHOWN ENCODING, WHILE THE KEY SIGNATURE IS ONLY SHOWN IN THE RENDERING BUT NOT THE CODE -->
-                  <p>In this example, the sharp is meant to cancel the flat in the key signature and, therefore, it should be performed as a natural. That is why the written accidental is encoded as a sharp (<att>accid=s</att>) and the gestural/performed accidental is given by the <att>accid.ges=n</att> representing a natural.</p>
+                  <p>In this example, the sharp is meant to cancel the flat in the key signature and, therefore, it should be performed as a natural. That is why the written accidental is encoded as a sharp with <att>accid = s</att>, and the gestural/performed accidental is given by the <att>accid.ges = n</att> representing a natural.</p>
                   <p>The <att>accid.ges</att> can be used in the <gi scheme="MEI">note</gi> element itself, which is especially useful when encoding a note with an "implicit" accidental (i.e., a note that is affected by the accidentals of the key signature).</p>
                   <!-- TO DO: INCLUDE ANOTHER EXAMPLE WITH IMPLIED ACCIDENTALS (ENCODING AND RENDITION) -->
                </div>
