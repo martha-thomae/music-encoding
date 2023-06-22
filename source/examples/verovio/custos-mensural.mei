@@ -1,0 +1,42 @@
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+        <titleStmt>
+            <title>Example of 'custos'</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2022-06-21</date>
+         </pubStmt>
+         <notesStmt>
+             <annot>Normally, custodes appear on a Parts-based MEI file (at the end of the system) rather than a Score-based file. However, only Score-based MEI files are rendered by Verovio. Therefore, this example uses a Score-based file.</annot>
+         </notesStmt>
+     </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" notationtype="mensural" clef.shape="C" clef.line="3"></staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer>
+                        <note pname="e" oct="4" dur="semibrevis"/>
+                        <note pname="d" oct="4" dur="minima"/>
+                        <note pname="c" oct="4" dur="minima"/>
+                        <?edit-start?>
+                        <custos pname="b" oct="3" accid="f"/>
+                        <?edit-end?>
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

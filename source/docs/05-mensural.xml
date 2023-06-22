@@ -481,7 +481,14 @@
                         <specDesc key="att.staffLoc" atts="loc"/>
                      </specList>
                   </p>
-                  <!-- INCLUDE EXAMPLE OF CODE AND RENDERING -->             
+                  <p>
+                     <figure>
+                        <head/>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="verovio code" xml:space="preserve">
+                           <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../examples/verovio/custos-mensural.mei" parse="text"/>
+                        </egXML>
+                     </figure>
+                  </p>
                </div>
             </div>
          </div>
