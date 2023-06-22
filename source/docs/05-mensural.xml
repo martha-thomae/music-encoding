@@ -446,7 +446,7 @@
                   </p>
                   <p>
                      <figure>
-                        <head>Written accidental (sharp) different from the performed accidental (natural), as the accidental cancels the effect of the key signature</head>
+                        <head>Written accidental (sharp) different from the performed accidental (natural), as the sharp cancels the effect of the flat in the key signature</head>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="verovio code" xml:space="preserve">
                            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../examples/verovio/accid-mensural-written-vs-gestural.mei" parse="text"/>
                         </egXML>
