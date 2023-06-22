@@ -463,8 +463,23 @@
                         <specDesc key="att.color" atts="color"/>
                      </specList>
                   </p>
-                  <p>However, the effect of the coloration in the note's or rest's duration has to be encoded with the attribute <att>dur.quality</att> or the pair of attributes <att>num</att> and <att>numbase</att> within the corresponding <gi scheme="MEI">note</gi> or <gi scheme="MEI">rest</gi> element.</p>
-                  <!-- INCLUDE EXAMPLE OF COLORATION JUST WITH COLORED AND DUR.QUALITY (code and rendering) -->
+                  <p>However, the effect of the coloration in the note's or rest's duration has to be encoded with the attribute <att>dur.quality</att> or the pair of attributes <att>num</att> and <att>numbase</att> within the corresponding <gi scheme="MEI">note</gi> or <gi scheme="MEI">rest</gi> element.</p> The following examples show coloration in white mensural notation, which consist in the 'blackening' of notes, and in black mensural notation, which was usually done with red ink.
+                  <p>
+                     <figure>
+                        <head>Coloration in white mensural notation (i.e., blackening)</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="verovio code" xml:space="preserve">
+                           <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../examples/verovio/coloration_whitemens.mei" parse="text"/>
+                        </egXML>
+                     </figure>
+                  </p>
+                  <p>
+                     <figure>
+                        <head>Coloration in black mensural notation using red ink</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="verovio code" xml:space="preserve">
+                           <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../examples/verovio/coloration_blackmens.mei" parse="text"/>
+                        </egXML>
+                     </figure>
+                  </p>
                </div>
                <div xml:id="custos" type="div3">
                   <head>Custos</head>
